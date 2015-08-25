@@ -4,8 +4,5 @@
     "protocol":"github:hqlcs/dialog",
     "description": "A dialog",
     "name": "dialog",
-    "main": "dialog.js",
-    "dependencies": [
-        "jquery"
-    ],
+    "main": "dialog.js"
 }
