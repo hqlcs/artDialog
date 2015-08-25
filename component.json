@@ -1,7 +1,11 @@
 {
     "version": "6.0.5",
     "repos": "https://github.com/aui/artDialog",
+    "protocol":"github:hqlcs/moment",
     "description": "A dialog",
     "name": "dialog",
-    "main": "dialog.js"
+    "main": "dialog.js",
+    "dependencies": [
+        "jquery@>=1.8"
+    ],
 }
