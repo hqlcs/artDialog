@@ -6,6 +6,6 @@
     "name": "dialog",
     "main": "dialog.js",
     "dependencies": [
-        "jquery@^1.9.1"
+        "jquery"
     ],
 }
