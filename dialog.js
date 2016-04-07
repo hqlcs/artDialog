@@ -7,28 +7,13 @@
  * This is licensed under the GNU LGPL, version 2.1 or later.
  * For details, see: http://www.gnu.org/licenses/lgpl-2.1.html
  */
-
+/**
+ * @require dialog.css
+ */
 
 var $ = require('jquery');
 var Popup = require('./popup');
 var defaults = require('./dialog-config');
-var css = defaults.cssUri;
-
-
-// css loader: RequireJS & SeaJS
-if (css) {
-    var fn = require[require.toUrl ? 'toUrl' : 'resolve'];
-    if (fn) {
-        css = fn(css);
-        css = '<link rel="stylesheet" href="' + css + '" />';
-        if ($('base')[0]) {
-            $('base').before(css);
-        } else {
-            $('head').append(css);
-        } 
-    }
-}
-
 
 var _count = 0;
 var _expando = new Date() - 0; // Date.now()
